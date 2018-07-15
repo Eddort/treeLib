@@ -1,0 +1,34 @@
+{
+  "name": "ts-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "start": "echo 'print you start command'",
+    "": "npm run build:watch && npm run start",
+    "dev": "npm run build:watch >> log/dev.log 2>&1 && npm run start >> log/dev.log 2>&1",
+    "dev:logs": "npm run dev && tail -f log/dev.log",
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eddort/ts-boilerplate.git"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "boilerplate",
+    "ts-boilerplate"
+  ],
+  "author": "Eddort",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eddort/ts-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Eddort/ts-boilerplate#readme",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
+}
