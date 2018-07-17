@@ -35,17 +35,19 @@
     "typescript": "^2.9.2"
   },
   "jest": {
-    "transform": {
-      "^.+\\.ts?$": "ts-jest"
+	"globals": {
+   "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+        }
     },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?)$",
+    "testRegex": "./__tests__/.*.spec.ts$",
     "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+        "ts",
+        "tsx",
+        "js"
+    ],
+    "transform": {
+        "^.+\\.(ts|tsx)$": "ts-jest"
+    }
   }
 }
